@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Very Good Studio</title>
+  <meta name="description" content="Very Good Studio — Coming soon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --fg: #0f0f0f;
+      --fg-muted: #666;
+      --bg: #fafafa;
+      --accent: #0f0f0f;
+      --border: #e5e5e5;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--fg);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 2rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--fg);
+      text-decoration: none;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero {
+      max-width: 520px;
+      width: 100%;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--fg-muted);
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--fg);
+      margin-bottom: 1.5rem;
+    }
+
+    h1 em {
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    .tagline {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: var(--fg-muted);
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    .divider {
+      width: 2rem;
+      height: 1px;
+      background: var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .contact {
+      font-size: 0.9rem;
+      color: var(--fg-muted);
+    }
+
+    .contact a {
+      color: var(--fg);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1px;
+      transition: border-color 0.2s ease;
+    }
+
+    .contact a:hover {
+      border-color: var(--fg);
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--fg-muted);
+    }
+
+    .footer-url {
+      font-size: 0.8rem;
+      color: var(--fg-muted);
+      letter-spacing: 0.01em;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1.5rem;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="/">Very Good Studio</a>
+  </header>
+
+  <main>
+    <div class="hero">
+      <span class="tag">Coming soon</span>
+      <h1>Software made <em>well.</em></h1>
+      <p class="tagline">
+        We build clean, thoughtful software products.<br />
+        Something new is on its way.
+      </p>
+      <div class="divider"></div>
+      <p class="contact">
+        In the meantime, say hello —
+        <a href="mailto:contact@very-good-studio.com">contact@very-good-studio.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <span class="footer-copy">&copy; 2026 Very Good Studio Ltd.</span>
+    <span class="footer-url">very-good-studio.com</span>
+  </footer>
+</body>
+</html>
